@@ -46,8 +46,8 @@ float testbereich (float wert, float min, float max)
 	cout << "wert (float) auserhalb des testbereiches\n";
 	
 }
-/*überladene funktion heißt nun: dass man mehrere funktionen mit dem selben namen
+/*Ã¼berladene funktion heiÃŸt nun: dass man mehrere funktionen mit dem selben namen
 verwenden kann wenn die parameter verscheidene variablen typen sind oder es unterschiedlich viele parameter gibt.
-möglich ist auch das sich der rückgabewert untersheidet.
-verboten ist nur eine funktion nur anhand des rückgabetyps zu unterscheiden.*/
+mÃ¶glich ist auch das sich der rÃ¼ckgabewert untersheidet.
+verboten ist nur eine funktion nur anhand des rÃ¼ckgabetyps zu unterscheiden.*/
 
