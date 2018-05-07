@@ -18,7 +18,7 @@ int level = 5;
 int highscore = 100;
 
 //zufallsgenerator initialisieren
-srand (timeGetTime ());
+DWORD timeGetTime(void);
 
 do
 	{
