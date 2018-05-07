@@ -5,7 +5,6 @@ abhängig gemacht. wir müssen also die zeit includieren.*/
 
 using namespace std;
 
-#pragma comment (lib, "winmm.lib")
 
 int spielen (int level);
 int waehlelevel (int level);
