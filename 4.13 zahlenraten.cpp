@@ -1,5 +1,7 @@
 #include <iostream>
 #include <windows.h>
+#include <time.h> /*der zufallsgenerator wird von der zeit des laufenden betriebssystems
+abhängig gemacht. wir müssen also die zeit includieren.*/
 
 using namespace std;
 
@@ -18,9 +20,8 @@ int level = 5;
 int highscore = 100;
 
 //zufallsgenerator initialisieren
-DWORD timeGetTime(void);
-
-do
+srand((unsigned)time(NULL));
+	do
 	{
 	
 	cout << "zahlenraten menue\n";
@@ -38,7 +39,7 @@ do
 		{
 		case ('N'):
 		case ('n'):
-		case (1):
+		case ('1'):
 			{
 			int punkte;
 			punkte = spielen (level);
@@ -48,28 +49,28 @@ do
 		
 		case ('L'):
 		case ('l'):
-		case (2):
+		case ('2'):
 			{
 			level = waehlelevel (level);
 			}break;
 		
 		case ('H'):
 		case ('h'):
-		case (3):
+		case ('3'):
 			{
 			cout << "der aktuelle highscore liegt bei " << highscore << " punkten\n\n";
 			}break;
 		
 		case ('I'):
 		case ('i'):
-		case (4):
+		case ('4'):
 			{
 			zeigeinfos ();
 			}break;
 		
 		case ('B'):
 		case ('b'):
-		case (5):
+		case ('5'):
 			{
 		cout << "spiel wird beendet\n";
 			}break;
@@ -130,10 +131,13 @@ int spielen (int level)
 		versuche++;
 		
 		if (geratenezahl < zufallszahl)
+		{
 		cout << "die gesuchte zahl ist groesser\n";
+		}
 		if (geratenezahl > zufallszahl)
+		{
 		cout << "die gesuchte zahl ist kleiner\n";
-		
+		}
 	}
 	
 	cout << "du hast die zahl erraten\n";
