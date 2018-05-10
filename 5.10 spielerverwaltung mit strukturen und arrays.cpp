@@ -6,11 +6,7 @@ using namespace std;
 
 int main()
 {
-	
-	
-
-	
-		
+			
 	struct s_spieler
 	{
 		int team;
