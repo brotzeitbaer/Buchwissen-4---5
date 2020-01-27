@@ -2,6 +2,8 @@
 
 using namespace std;
 
+/*Die Namen der Variablen müssen hier nicht stehen, sie dienen nur der Überschaubarkeit.
+Es könnte auch (int, int, int) stehen.*/
 int berechnepunkte ( int punkte,int restzeit,int zeitfaktor);
 
 int main()
